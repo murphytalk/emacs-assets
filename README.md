@@ -14,7 +14,7 @@ The path in the `el` files needs to be updated to refect the target environment.
 
 
 ```
-@"VLOOKUP\(\"[^\"]*\",[^\!]*(![^\,]*)?,[^\)]*" 
+rn = @"VLOOKUP\(\""([^""]*)\",([^!]*(![^,]*)?|[^\)]*)";
 ^(?:\('?[a-zA-Z0-9\s]+'?!?\$?[a-zA-Z]+\$?\$?[0-9]+\,?){2}(?:\$?[0-9]+)?\)$
 ```
 
